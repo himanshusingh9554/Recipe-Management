@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Platform - Home</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Recipe Platform</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" id="navLogin"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item" id="navRegister"><a class="nav-link" href="register.html">Register</a></li>
+        <li class="nav-item" id="navProfile"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+        <li class="nav-item" id="navFavorites"><a class="nav-link" href="favorites.html">Favorites</a></li>
+        <li class="nav-item" id="navLogout"><a class="nav-link" href="#">Logout</a></li>
+        <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+        <li class="nav-item" id="navAdmin">
+          <a class="nav-link" href="admin.html">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Welcome to the Recipe Platform</h1>
+    <p>This platform allows you to manage recipes, reviews, favorites, and more.</p>
+    <div class="text-right mb-3">
+      <a href="createRecipe.html" id="createRecipe" class="btn btn-success" style="display: none;">
+        + Create New Recipe
+      </a>
+    </div>
+    <form id="searchForm" class="mb-4">
+      <div class="row">
+        <div class="col-md-4 mb-2">
+          <input type="text" id="searchQuery" class="form-control" placeholder="Search for recipes..." name="search" />
+        </div>
+        <div class="col-md-2 mb-2">
+          <input type="number" id="minTime" class="form-control" placeholder="Min Time" name="minTime" />
+        </div>
+        <div class="col-md-2 mb-2">
+          <input type="number" id="maxTime" class="form-control" placeholder="Max Time" name="maxTime" />
+        </div>
+        <div class="col-md-2 mb-2">
+          <button type="submit" class="btn btn-primary w-100">Search</button>
+        </div>
+      </div>
+    </form>
+    <div id="recipesList" class="row"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>

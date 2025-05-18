@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Recipe - Recipe Platform</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Recipe Platform</a>
+  </nav>
+  <div class="container mt-5">
+    <h2>Edit Recipe</h2>
+    <form id="editRecipeForm">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" class="form-control" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" class="form-control" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" class="form-control" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="cookingTime">Cooking Time (minutes):</label>
+        <input type="number" id="cookingTime" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="servings">Servings:</label>
+        <input type="number" id="servings" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Recipe Image:</label>
+        <input type="file" id="image" accept="image/*">
+      </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select class="form-control" id="category" required>
+          <option value="">Select a category</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Non-Vegetarian">Non-Vegetarian</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Dessert">Dessert</option>
+          <option value="Beverage">Beverage</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Update Recipe</button>
+    </form>
+  </div>
+  <script src="/js/edit.js"></script>
+</body>
+</html>

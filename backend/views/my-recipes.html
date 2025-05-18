@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Recipes - Recipe Hub</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Recipe Hub</h1>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="favorites.html" class="nav-link">Favorites</a>
+        <a href="createRecipe.html" class="nav-link">Add Recipe</a>
+        <div id="user-menu" style="display: none;">
+          <span id="user-btn"></span>
+          <button id="logout-btn" class="btn">Logout</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>My Recipes</h2>
+    <section id="my-recipes-container">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Recipe Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/auth.js"></script>
+  <script type="module" src="/js/recipes.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collections - Recipe Platform</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Recipe Platform</a>
+    <div class="ml-auto">
+      <a href="profile.html" class="btn btn-outline-primary">Profile</a>
+      <a href="recipes.html" class="btn btn-outline-primary">Recipes</a>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2>Your Collections</h2>
+    <div id="collectionsList" class="row mb-5"></div>
+
+    <h2>Your Favorites</h2>
+    <div id="favoritesList" class="row mb-5"></div>
+
+    <hr>
+
+    <h4>Create a New Collection</h4>
+    <form id="createCollectionForm" class="form-inline">
+      <input type="text" id="collectionName" class="form-control mr-2" placeholder="Collection Name" required>
+      <button type="submit" class="btn btn-success">Create</button>
+    </form>
+  </div>
+
+  <script src="/js/collection.js"></script>
+</body>
+</html>

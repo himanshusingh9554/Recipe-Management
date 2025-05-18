@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile - Recipe Platform</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Recipe Platform</a>
+    <a href="recipes.html" class="btn btn-outline-primary">Recipes</a>
+  </nav>
+
+  <div class="container mt-5">
+    <h2>Your Profile</h2>
+    <div id="profileDetails" class="mb-4"></div>
+
+    <button id="editProfileBtn" class="btn btn-secondary mb-3">Edit Profile</button>
+    <div id="editProfileFormContainer" style="display: none;" class="mb-5">
+      <h4>Edit Your Profile</h4>
+      <form id="editProfileForm">
+        <div class="form-group">
+          <label for="usernameInput">New Username:</label>
+          <input type="text" id="usernameInput" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="emailInput">New Email:</label>
+          <input type="email" id="emailInput" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="bioInput">Bio:</label>
+          <textarea id="bioInput" class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Profile</button>
+      </form>
+    </div>
+
+    <h3>Your Recipes</h3>
+    <div id="userRecipes" class="row"></div>
+  </div>
+
+  <script src="/js/profile.js"></script>
+</body>
+</html>

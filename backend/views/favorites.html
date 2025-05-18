@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Favorites – Recipe Platform</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Recipe Platform</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="navLogin"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item" id="navRegister"><a class="nav-link" href="register.html">Register</a></li>
+        <li class="nav-item" id="navProfile"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item" id="navRecipes"><a class="nav-link" href="recipes.html">Recipes</a></li>
+        <li class="nav-item" id="navFavorites"><a class="nav-link" href="favorites.html">Favorites</a></li>
+        <li class="nav-item" id="navLogout"><a class="nav-link" href="#">Logout</a></li>
+        <li class="nav-item" id="navAdmin"><a class="nav-link" href="admin.html">Admin</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2>Your Favorites</h2>
+      <a href="createRecipe.html" id="createRecipe" class="btn btn-success" style="display: none;">
+        + Create New Recipe
+      </a>
+    </div>
+
+    <div id="favoritesList" class="row"></div>
+  </div>
+
+  <script src="/js/favorites.js"></script>
+</body>
+</html>

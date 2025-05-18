@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Recipe</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Recipe Platform</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
+        <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+        <li class="nav-item" id="navLogout"><a class="nav-link" href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Create a New Recipe</h1>
+    <form id="createRecipeForm">
+      <div class="form-group">
+        <label for="title">Recipe Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Enter recipe title" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" rows="3" placeholder="Enter recipe description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="ingredients">Ingredients</label>
+        <textarea class="form-control" id="ingredients" rows="3" placeholder="Enter ingredients" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="instructions">Instructions</label>
+        <textarea class="form-control" id="instructions" rows="5" placeholder="Enter instructions" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="cookingTime">Cooking Time (in minutes)</label>
+        <input type="number" class="form-control" id="cookingTime" placeholder="Enter cooking time" required>
+      </div>
+      <div class="form-group">
+        <label for="servings">Servings</label>
+        <input type="number" class="form-control" id="servings" placeholder="Enter number of servings" required>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select class="form-control" id="category" required>
+          <option value="">Select a category</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Non-Vegetarian">Non-Vegetarian</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Dessert">Dessert</option>
+          <option value="Beverage">Beverage</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="image">Recipe Image</label>
+        <input type="file" class="form-control-file" id="image">
+      </div>
+      <button type="submit" class="btn btn-primary">Create Recipe</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/create.js"></script>
+</body>
+</html>

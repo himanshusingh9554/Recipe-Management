@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse Recipes - Recipe Platform</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Recipe Platform</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="navLogin"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item" id="navRegister"><a class="nav-link" href="register.html">Register</a></li>
+        <li class="nav-item" id="navProfile"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item" id="navFavorites"><a class="nav-link" href="favorites.html">Favorites</a></li>
+        <li class="nav-item" id="navLogout"><a class="nav-link" href="#">Logout</a></li>
+        <li class="nav-item" id="navAdmin"><a class="nav-link" href="admin.html">Admin</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2>Browse Recipes</h2>
+      <a href="createRecipe.html" id="createRecipe" class="btn btn-success" style="display:none">
+        + Create New Recipe
+      </a>
+    </div>
+
+    <div class="mb-4">
+      <div class="row">
+        <div class="col-md-4 mb-2">
+          <input id="searchInput" type="text" class="form-control" placeholder="Search by title or ingredients">
+        </div>
+        <div class="col-md-3 mb-2">
+          <select id="filterCategory" class="form-control">
+            <option value="">Select a category</option>
+  <option value="Vegetarian">Vegetarian</option>
+  <option value="Non-Vegetarian">Non-Vegetarian</option>
+  <option value="Vegan">Vegan</option>
+  <option value="Dessert">Dessert</option>
+  <option value="Beverage">Beverage</option>
+          </select>
+        </div>
+        <div class="col-md-2 mb-2">
+          <input id="minTime" type="number" class="form-control" placeholder="Min Time">
+        </div>
+        <div class="col-md-2 mb-2">
+          <input id="maxTime" type="number" class="form-control" placeholder="Max Time">
+        </div>
+        <div class="col-md-1 mb-2">
+          <button id="clearFilters" class="btn btn-secondary w-100">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="recipesList" class="row"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/recipes.js"></script>
+</body>
+</html>
