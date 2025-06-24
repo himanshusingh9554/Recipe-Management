@@ -23,4 +23,11 @@
 ## 📂 Project Structure
 
 The project follows a clean Model-View-Controller (MVC) pattern to keep the codebase organized and scalable.
-![image](https://github.com/user-attachments/assets/32532743-690c-4880-8d39-7ff53849be7e)
+
+![image](https://github.com/user-attachments/assets/4bef88f5-1ddf-484b-a1f3-310fd24278d8)
+
+![image](https://github.com/user-attachments/assets/0f3db471-8978-4fae-8eae-18c240b779b4)
+
+![image](https://github.com/user-attachments/assets/d26acf1f-986f-4c29-8de9-9b60b2da9966)
+
+![image](https://github.com/user-attachments/assets/d616ad36-d5c2-4be2-8ba8-9a43310a5faa)
