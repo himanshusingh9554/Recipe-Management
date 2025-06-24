@@ -2,7 +2,7 @@
 
 > A server-side rendered web application for managing and sharing culinary recipes. Built with Node.js, Express, and a classic MVC architecture.
 
-![Recipe App Screenshot](URL_TO_YOUR_SCREENSHOT)
+![Recipe App Screenshot]()
 ## ✨ Features
 
 * **User Authentication:** Secure user registration and login functionality.
@@ -23,3 +23,4 @@
 ## 📂 Project Structure
 
 The project follows a clean Model-View-Controller (MVC) pattern to keep the codebase organized and scalable.
+![image](https://github.com/user-attachments/assets/32532743-690c-4880-8d39-7ff53849be7e)
